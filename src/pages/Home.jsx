@@ -1,4 +1,3 @@
-import "./../pages/Portfolio.jsx"
 export default function Home() {
   return (
     <section className="hero">
@@ -17,7 +16,6 @@ export default function Home() {
           Percayakan kebutuhan furnitur Anda kepada kami, dan wujudkan ruangan
           yang elegan, fungsional, serta penuh karakter.
         </p>
-        <a href="/portfolio" className="hero-button">Lihat Portfolio</a>
       </div>
     </section>
   );
