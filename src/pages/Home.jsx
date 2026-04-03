@@ -12,7 +12,8 @@ export default function Home() {
           kami dibuat untuk memberikan daya tahan jangka panjang sekaligus mempercantik
           ruangan Anda.
         </p>
-        <p className="hero-subtitle">
+        <p className="hernpm run dev
+        o-subtitle">
           Percayakan kebutuhan furnitur Anda kepada kami, dan wujudkan ruangan
           yang elegan, fungsional, serta penuh karakter.
         </p>

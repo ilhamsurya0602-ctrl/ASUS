@@ -1,11 +1,15 @@
 .hero {
   text-align: center;
   padding: 5rem 2rem;
-  background: linear-gradient(-45deg, #1e3a8a, #3b82f6, #2563eb, #1d4ed8);
-  background-size: 400% 400%;
+  background: linear-gradient(-45deg, #1e3a8a, #3b82f6, #3e6daa, #0f9e9e);
+  background-size: 300% 300%;
   animation: gradientBG 12s ease infinite;
-  color: #f9fafb; /* teks putih abu agar kontras */
+  color: #0a61b8;
+  width: 100%;
+  min-height: 50vh;   /* tinggi penuh layar */
+  margin: 0;
 }
+
 
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
@@ -22,14 +26,14 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #ffffff; /* putih agar jelas */
+  color: #08fd45; /* putih agar jelas */
 }
 
 .hero-subtitle {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 1rem;
-  color: #e5e7eb; /* abu terang agar kontras */
+  color: #fefffe; /* abu terang agar kontras */
 }
 
 .hero-button {
@@ -132,4 +136,12 @@
 
 .btn-email:hover {
   background-color: #1d4ed8;
+}
+.contact-section {
+  background-color: #2563eb; /* biru */
+  padding: 3rem 1rem;
+  min-height: 50vh; /* biar full layar */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

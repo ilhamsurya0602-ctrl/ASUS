@@ -84,21 +84,22 @@ section p {
   margin-bottom: 0.5rem;
 }
 
-/* Footer */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 footer {
-  background: #1f2937;
-  color: #f3f4f6;
-  padding: 1.5rem;
+  margin-top: auto; /* dorong footer ke bawah */
+  background-color: #1f2937;
+  color: #f9fafb;
   text-align: center;
-  margin-top: 2rem;
+  padding: 1rem;
 }
 
-footer a {
-  color: #f3f4f6;
-  margin: 0 0.5rem;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #10b981;
-}
