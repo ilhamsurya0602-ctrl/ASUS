@@ -1,19 +1,27 @@
 import { useState } from "react";
-import "../home.css"; // pastikan path sesuai
+import "../home.css";
 
 export default function Contact() {
   const [nama, setNama] = useState("");
   const [email, setEmail] = useState("");
-  const [pesan, setPesan] = useState(""); // tambahan state untuk pesan
+  const [pesan, setPesan] = useState("");
 
   const handleWhatsApp = () => {
-    const nomor = "62882016503408"; // ganti dengan nomor WA tujuan
+    if (!nama || !email || !pesan) {
+      alert("Harap isi semua field sebelum mengirim!");
+      return;
+    }
+    const nomor = "62882016503408"; 
     const text = `Halo, saya ${nama} (${email}) ingin menghubungi Ridwan Furniture.\nPesan: ${pesan}`;
     const url = `https://wa.me/${nomor}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
   };
 
   const handleEmail = () => {
+    if (!nama || !email || !pesan) {
+      alert("Harap isi semua field sebelum mengirim!");
+      return;
+    }
     const tujuan = "ilhamsurya0602@gmail.com";
     const subject = "Kontak dari Website";
     const body = `Halo, saya ${nama} (${email}) ingin menghubungi Ridwan Furniture.\nPesan: ${pesan}`;
@@ -32,6 +40,7 @@ export default function Contact() {
           value={nama}
           onChange={(e) => setNama(e.target.value)}
           placeholder="Masukkan nama Anda"
+          required
         />
 
         <label>Email</label>
@@ -40,6 +49,7 @@ export default function Contact() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Masukkan email Anda"
+          required
         />
 
         <label>Pesan</label>
@@ -48,7 +58,7 @@ export default function Contact() {
           onChange={(e) => setPesan(e.target.value)}
           placeholder="Tulis pesan Anda"
           rows="4"
-          style={{ width: "100%", borderRadius: "8px", padding: "0.75rem" }}
+          required
         />
 
         <div className="contact-buttons">
