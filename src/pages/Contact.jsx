@@ -6,7 +6,7 @@ export default function Contact() {
   const [email, setEmail] = useState("");
 
   const handleWhatsApp = () => {
-    const nomor = "0882016503408"; // ganti dengan nomor WA tujuan
+    const nomor = "62882016503408"; // ganti dengan nomor WA tujuan
     const pesan = `Halo, saya ${nama} (${email}) ingin menghubungi Ridwan Furniture.`;
     const url = `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`;
     window.open(url, "_blank");
