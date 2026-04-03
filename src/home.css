@@ -5,10 +5,20 @@
   background-size: 300% 300%;
   animation: gradientBG 12s ease infinite;
   color: #0a61b8;
-  width: 100%;
-  min-height: 50vh;   /* tinggi penuh layar */
+  width: 50%;
+  min-height: 50vh;
   margin: 0;
 }
+
+/* Tambahkan aturan untuk layar kecil */
+@media (max-width: 768px) {
+  .hero {
+    width: 100%;
+    padding: 3rem 1rem; /* lebih kecil agar pas di HP */
+    min-height: 60vh;   /* bisa ditambah agar tetap penuh */
+  }
+}
+
 
 
 @keyframes gradientBG {
