@@ -11,7 +11,7 @@ export default function Contact() {
       alert("Harap isi semua field sebelum mengirim!");
       return;
     }
-    const nomor = "62882016503408"; 
+    const nomor = "62881024808208"; 
     const text = `Halo, saya ${nama} (${email}) ingin menghubungi Ridwan Furniture.\nPesan: ${pesan}`;
     const url = `https://wa.me/${nomor}?text=${encodeURIComponent(text)}`;
     window.open(url, "_blank");
