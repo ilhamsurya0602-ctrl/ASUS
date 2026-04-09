@@ -12,8 +12,6 @@ export default function Navbar() {
         <img src={logo} alt="Logo Ridwan Furniture" className="logo" />
         <h1>Ridwan Furniture</h1>
       </div>
-
-      {/* Tombol hamburger */}
       <button className="hamburger" onClick={() => setIsOpen(!isOpen)}>
         ☰
       </button>

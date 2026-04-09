@@ -4,7 +4,7 @@
   background: linear-gradient(-45deg, #1e3a8a, #3b82f6, #2563eb, #1d4ed8);
   background-size: 400% 400%;
   animation: gradientBG 12s ease infinite;
-  color: #f9fafb; /* teks putih abu agar kontras */
+  color: #f9fafb;
 }
 
 @keyframes gradientBG {
@@ -22,20 +22,20 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #ffffff; /* putih agar jelas */
+  color: #ffffff;
 }
 
 .hero-subtitle {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 1rem;
-  color: #e5e7eb; /* abu terang agar kontras */
+  color: #e5e7eb;
 }
 
 .hero-button {
   display: inline-block;
   margin-top: 2rem;
-  background: #10b981; /* hijau kontras */
+  background: #10b981; 
   color: white;
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
@@ -49,7 +49,7 @@
   transform: scale(1.05);
 }
 
-/* ===== Contact Page Styling ===== */
+
 .contact-section {
   background-color: #f9fafb;
   padding: 3rem 1rem;
